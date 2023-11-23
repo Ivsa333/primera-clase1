@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=Televisor
+comment1.params=nombreDelDue\u00F1o\ queNumeroCanalActivo\ encenderTelevisor
+comment1.target=Televisor(java.lang.String,\ int,\ boolean)
+comment2.params=
+comment2.target=java.lang.String\ getNombreDue\u00F1o()
+comment3.params=
+comment3.target=int\ getNumeroCanalActivo()
+comment4.params=
+comment4.target=boolean\ getTelevisorEncendido()
+numComments=5
