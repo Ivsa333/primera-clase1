@@ -20,4 +20,22 @@ public class Televisor {
     public boolean getTelevisorEncendido() {
         return televisorEncendido;
     }
+    
+    public void setNombreDueño(String newNombre) {
+        nombreDueño = newNombre;
+    }
+    
+    public void numeroCanalActivo(int cambioCanal) {
+        numeroCanalActivo = cambioCanal;
+    }
+    
+    public void televisorEncendido(boolean televisorApagado) {
+        if (televisorEncendido = true) {
+            televisorApagado = false;
+        }
+        else {
+            televisorEncendido = false;
+            televisorApagado = true;
+        }
+    }
 }
