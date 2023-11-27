@@ -38,4 +38,13 @@ public class Televisor {
             televisorApagado = true;
         }
     }
+    
+    public void imprimirEstado() {
+        System.out.println("Dueño: " + nombreDueño);
+        System.out.println("Numero del canal: " + numeroCanalActivo);
+        System.out.println("Televisor encendido: " + televisorEncendido);
+    }
+    public String getDatosEstado() {
+        return ("Dueño: " + nombreDueño + " |Numero del canal: " + "" + numeroCanalActivo + " |Encendido: " + "" + televisorEncendido);
+    }
 }
