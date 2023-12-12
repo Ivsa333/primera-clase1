@@ -2,6 +2,10 @@
 comment0.target=Televisor
 comment1.params=nombreDelDue\u00F1o\ queNumeroCanalActivo\ encenderTelevisor
 comment1.target=Televisor(java.lang.String,\ int,\ boolean)
+comment10.params=hayUnDue\u00F1o
+comment10.target=void\ setTieneDue\u00F1o(boolean)
+comment11.params=
+comment11.target=boolean\ getTieneDue\u00F1o()
 comment2.params=
 comment2.target=java.lang.String\ getNombreDue\u00F1o()
 comment3.params=
@@ -18,4 +22,4 @@ comment8.params=
 comment8.target=void\ imprimirEstado()
 comment9.params=
 comment9.target=java.lang.String\ getDatosEstado()
-numComments=10
+numComments=12
