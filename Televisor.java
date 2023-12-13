@@ -1,17 +1,21 @@
 public class Televisor {
-    private String nombreDueño;
+    private String nombreDueno;
     private int numeroCanalActivo;
     private boolean televisorEncendido;
-    private boolean tieneDueño;
-    public Televisor(String nombreDelDueño, int queNumeroCanalActivo, boolean encenderTelevisor) {
-        nombreDueño = nombreDelDueño;
+    private boolean tieneDueno;
+    public Televisor(String nombreDelDueno, int queNumeroCanalActivo) {
+        nombreDueno = nombreDelDueno;
         numeroCanalActivo = queNumeroCanalActivo;
-        televisorEncendido = encenderTelevisor;
-        tieneDueño = true;
+        televisorEncendido = true;
+        tieneDueno = true;
     }
     
-    public String getNombreDueño() {
-        return nombreDueño;
+    public String getNombreDueno() {
+        return nombreDueno;
+    }
+    
+        public String getDatosEstado() {
+        return ("Dueno: " + nombreDueno + " |Numero del canal: " + "" + numeroCanalActivo + " |Encendido: " + "" + (televisorEncendido ? "Si" : "No") + " |Tiene un dueno: " + "" + (tieneDueno? "Si" : "No"));
     }
     
     public int getNumeroCanalActivo() {
@@ -22,40 +26,27 @@ public class Televisor {
         return televisorEncendido;
     }
     
-    public void setNombreDueño(String newNombre) {
-        nombreDueño = newNombre;
+    public void setNombreDueno(String newNombre) {
+        nombreDueno = newNombre;
     }
     
     public void numeroCanalActivo(int cambioCanal) {
-        numeroCanalActivo = cambioCanal;
+        numeroCanalActivo = numeroCanalActivo + cambioCanal;
     }
     
-    public void televisorEncendido(boolean televisorApagado) {
-        if (televisorEncendido = true) {
-            televisorApagado = false;
-        }
-        else {
-            televisorEncendido = false;
-            televisorApagado = true;
-        }
+    public void televisorEncendido() {
+        televisorEncendido = !televisorEncendido;
     }
     
-    public void imprimirEstado() {
-        System.out.println("Dueño: " + nombreDueño);
-        System.out.println("Numero del canal: " + numeroCanalActivo);
-        System.out.println("Televisor encendido: " + televisorEncendido);
-        System.out.println("Tiene un dueño: " + tieneDueño);
+    public void setTieneDueno() {
+        tieneDueno = !tieneDueno;
     }
     
-    public String getDatosEstado() {
-        return ("Dueño: " + nombreDueño + " |Numero del canal: " + "" + numeroCanalActivo + " |Encendido: " + "" + televisorEncendido + " |Tiene un dueño: " + "" + tieneDueño);
+    public boolean getTieneDueno(){
+        return tieneDueno;
     }
     
-    public void setTieneDueño(boolean hayUnDueño) {
-        tieneDueño = hayUnDueño;
-    }
-    
-    public boolean getTieneDueño(){
-        return tieneDueño;
+        public void imprimirEstado() {
+        System.out.println("Dueno: " + nombreDueno + " |Numero del canal: " + numeroCanalActivo + " |Televisor encendido: " + (televisorEncendido ? "Si" : "No") + " |Tiene un dueno: " + (tieneDueno? "Si" : "No"));
     }
 }
